@@ -26,18 +26,25 @@ class App extends Component {
   ) 
  }
 
+   displayContent (){
+      if (this.state.errors) {
+        return <div>Error: {this.state.errors}</div>
+      }
+
+      if(this.state.latitude) {
+        return <SeasonDisplay latitude={this.state.latitude}/>
+      }
+
+      return <Spinner message='Please allow location'/>
+    }
+
   render() {
-    console.log(this.state);
-    // debugger;
-    if (this.state.errors) {
-      return <div>Error: {this.state.errors}</div>
-    }
+    return(
+      <div>
+        {this.displayContent()}
+      </div>
+    )
 
-    if(this.state.latitude) {
-      return <SeasonDisplay latitude={this.state.latitude}/>
-    }
-
-    return <Spinner />
 
   }
 }
