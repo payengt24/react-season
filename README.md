@@ -4,8 +4,8 @@ This application is a small react project that display the season depending on y
 
 ### Starting Application
 
--Run npm install
--run npm start
+    -Run npm install
+    -run npm start
 
 ### Technology 
 
