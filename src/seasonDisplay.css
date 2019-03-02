@@ -18,7 +18,15 @@
 }
 
 .winter{
-    background-color: lightblue;
+    background-color: aliceblue;
+}
+
+.season-display.winter i{
+    color: blue;
+}
+
+.season-display.summer i{
+    color: yellow;
 }
 
 .summer{

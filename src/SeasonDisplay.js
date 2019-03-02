@@ -4,11 +4,11 @@ import './seasonDisplay.css'
 
 const seasonConfig = {
     summer: {
-        textDisplay: 'Let\s hit the beach',
+        textDisplay: 'Let\'s hit the beach',
         iconDisplay: 'sun'
     },
     winter: {
-        textDisplay: 'Let\s build a snowman',
+        textDisplay: 'Let\'s build a snowman',
         iconDisplay: 'snowflake'  
     }
 }
