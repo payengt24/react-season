@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import './SeasonDisplay'
+import SeasonDisplay from './SeasonDisplay';
 
 
 
@@ -32,7 +33,7 @@ class App extends Component {
     }
 
     if(this.state.latitude) {
-      return <div>Latitude: {this.state.latitude}</div>
+      return <SeasonDisplay latitude={this.state.latitude}/>
     }
 
     return <div>Loading</div>
